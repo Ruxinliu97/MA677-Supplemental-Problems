@@ -1,0 +1,50 @@
+---
+title: "Supplemental Problem"
+author: "Ruxin Liu"
+date: "3/7/2021"
+output: pdf_document
+---
+
+## 5.2
+
+### 4
+
+```{r}
+# Q1 a
+set.seed(19)
+u <- runif(1000, 0, 1)
+y <- u + 2
+hist(y, freq = FALSE)
+abline(1, 0, col = "purple")
+```
+
+```{r}
+# Q1 b
+set.seed(19)
+u <- runif(1000, 0, 1)
+y <- u^3
+curve(expr = 1 / 3 * x^(-2 / 3), from = 0, to = 1, col = "purple")
+hist(y, freq = FALSE)
+```
+
+```{r}
+# Q2 a
+set.seed(19)
+u <- runif(1000, 0, 1)
+y <- log(u + 1)
+curve(expr = exp(x), from = 0, to = log(2), col = "purple")
+hist(y, freq = FALSE)
+```
+
+```{r}
+# Q2 b
+set.seed(19)
+u <- runif(1000, 0, 1)
+y <- u^3
+curve(expr = 1 / 3 * x^(-2 / 3), from = 0, to = 1, col = "purple")
+hist(y, freq = FALSE)
+```
+
+```{r}
+library(alr4)
+```
