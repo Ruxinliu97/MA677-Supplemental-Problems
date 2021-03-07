@@ -5,6 +5,38 @@ date: "3/7/2021"
 output: pdf_document
 ---
 
+## 3.2
+### 30(a)
+
+```{r}
+p <- 0.5
+# Binomial distribution
+dbinom(4, size = 7, prob = p) + dbinom(5, size = 7, prob = p) +
+  dbinom(6, size = 7, prob = p) + dbinom(7, size = 7, prob = p)
+```
+
+```{r}
+p <- 0.6
+dbinom(4, size = 7, prob = p) + dbinom(5, size = 7, prob = p) +
+  dbinom(6, size = 7, prob = p) + dbinom(7, size = 7, prob = p)
+```
+
+```{r}
+p <- 0.7
+dbinom(4, size = 7, prob = p) + dbinom(5, size = 7, prob = p) +
+  dbinom(6, size = 7, prob = p) + dbinom(7, size = 7, prob = p)
+```
+
+### 30(a)
+```{r}
+p <- 0.6
+n = 10
+dbinom(4, size = n, prob = p) + dbinom(5, size = n, prob = p) +
+  dbinom(6, size = n, prob = p) + dbinom(7, size = n, prob = p) +
+  dbinom(8, size = n, prob = p) + dbinom(9, size = n, prob = p) +
+  dbinom(10, size = n, prob = p)
+```
+
 ## 5.2
 
 ### 4
@@ -45,6 +77,5 @@ curve(expr = 1 / 3 * x^(-2 / 3), from = 0, to = 1, col = "purple")
 hist(y, freq = FALSE)
 ```
 
-```{r}
-library(alr4)
-```
+
+
